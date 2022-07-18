@@ -4,5 +4,12 @@ if(!empty($_GET['sname']) && !empty($_GET['fname']))
 {
   $n1 = $_GET['fname'];
   $n2 = $_GET['sname'];
-   echo lovecalc($n1,$n2);
+  $percentage = lovecalc($n1,$n2);
+  
+  $data = [
+    "fname": $n1,
+    "sname": $n2,
+    "percentage": $percentage
+  ];
+  echo json_encode($data);
 }
