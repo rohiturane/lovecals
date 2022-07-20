@@ -5,9 +5,9 @@ include_once('./calculate.php');
 
   $n1 = $_GET['fname'];
   $n2 = $_GET['sname'];
-  echo 'hi '.$n1; exit;
-//   $percentage = lovecalc($n1,$n2);
-  
+
+  $percentage = lovecalc($n1,$n2);
+   echo 'hi '.$percentage; exit; 
 //   $data = [
 //     "fname": $n1,
 //     "sname": $n2,
