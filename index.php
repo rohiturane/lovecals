@@ -7,13 +7,13 @@ include_once('./calculate.php');
   $n2 = $_GET['sname'];
 
   $percentage = lovecalc($n1,$n2);
-   echo 'hi '.$percentage; exit; 
-//   $data = [
-//     "fname": $n1,
-//     "sname": $n2,
-//     "percentage": $percentage
-//   ];
-//   echo json_encode($data);
+  
+  $data = [
+    "fname": $n1,
+    "sname": $n2,
+    "percentage": $percentage
+  ];
+  echo json_encode($data);
 //} else {*/
  //echo json_encode(['status'=>false,'message'=>'Please provide all details']); 
 exit;
