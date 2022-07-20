@@ -1,4 +1,5 @@
 <?php
+echo 'hi'; exit;
 //include_once('calculate.php');
 if(!empty($_GET['sname']) && !empty($_GET['fname']))
 {
