@@ -1,7 +1,7 @@
 <?php
 echo 'hi'; exit;
 //include_once('calculate.php');
-if(!empty($_GET['sname']) && !empty($_GET['fname']))
+/*if(!empty($_GET['sname']) && !empty($_GET['fname']))
 {
   echo 'hi'; exit;
   $n1 = $_GET['fname'];
@@ -15,3 +15,4 @@ if(!empty($_GET['sname']) && !empty($_GET['fname']))
   ];
   echo json_encode($data);
 }
+*/
