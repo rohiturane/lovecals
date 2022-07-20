@@ -1,7 +1,7 @@
 <?php
 include_once('./calculate.php');
-var_dump($_GET); exit;
-/*if(!empty($_GET['sname']) && !empty($_GET['fname']))
+
+if(!empty($_GET['sname']) && !empty($_GET['fname']))
 {
   echo 'hi'; exit;
   $n1 = $_GET['fname'];
@@ -14,5 +14,7 @@ var_dump($_GET); exit;
     "percentage": $percentage
   ];
   echo json_encode($data);
+} else {
+ echo json_encode(['status'=>false,'message'=>'Please provide all details']); 
+
 }
-*/
