@@ -9,9 +9,9 @@ include_once('./calculate.php');
   $percentage = lovecalc($n1,$n2);
   
   $data = [
-    "fname": $n1,
-    "sname": $n2,
-    "percentage": $percentage
+    "fname"=> $n1,
+    "sname"=> $n2,
+    "percentage"=> $percentage
   ];
   echo json_encode($data);
 //} else {*/
