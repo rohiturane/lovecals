@@ -2,7 +2,7 @@
 include_once('./calculate.php');
 
 
-//if(!empty($_GET['fname']) && !empty($_GET['sname']))
+if(!empty($_GET['fname']) && !empty($_GET['sname']))
 {
   $n1 = $_GET['fname'];
   $n2 = $_GET['sname'];
@@ -14,8 +14,8 @@ include_once('./calculate.php');
     "sname"=> $n2,
     "percentage"=> $percentage
   ];
-  echo json_decode($data);
-//} else {
- //echo json_decode(['status'=>false,'message'=>'Please provide all details']); 
-//}
+  echo json_encode($data);
+} else {
+ echo json_encode(['status'=>false,'message'=>'Please provide all details']); 
+}
 exit;
