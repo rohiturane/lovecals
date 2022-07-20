@@ -3,17 +3,17 @@ include_once('./calculate.php');
 
 
   echo 'hi'; exit;
-  $n1 = $_GET['fname'];
-  $n2 = $_GET['sname'];
-  $percentage = lovecalc($n1,$n2);
+//   $n1 = $_GET['fname'];
+//   $n2 = $_GET['sname'];
+//   $percentage = lovecalc($n1,$n2);
   
-  $data = [
-    "fname": $n1,
-    "sname": $n2,
-    "percentage": $percentage
-  ];
-  echo json_encode($data);
+//   $data = [
+//     "fname": $n1,
+//     "sname": $n2,
+//     "percentage": $percentage
+//   ];
+//   echo json_encode($data);
 //} else {*/
- echo json_encode(['status'=>false,'message'=>'Please provide all details']); 
-
+ //echo json_encode(['status'=>false,'message'=>'Please provide all details']); 
+exit;
 //}
