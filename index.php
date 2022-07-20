@@ -1,7 +1,7 @@
 <?php
 include_once('./calculate.php');
 
-if(isset($_GET['sname']) && isset($_GET['fname']))
+/*if(isset($_GET['sname']) && isset($_GET['fname']))
 {
   echo 'hi'; exit;
   $n1 = $_GET['fname'];
@@ -14,7 +14,7 @@ if(isset($_GET['sname']) && isset($_GET['fname']))
     "percentage": $percentage
   ];
   echo json_encode($data);
-} else {
+} else {*/
  echo json_encode(['status'=>false,'message'=>'Please provide all details']); 
 
-}
+//}
