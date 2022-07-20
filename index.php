@@ -1,6 +1,6 @@
 <?php
+include_once('./calculate.php');
 var_dump($_GET); exit;
-//include_once('calculate.php');
 /*if(!empty($_GET['sname']) && !empty($_GET['fname']))
 {
   echo 'hi'; exit;
